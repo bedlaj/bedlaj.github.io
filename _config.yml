@@ -95,8 +95,8 @@ content:
         sub_title: CGI
         description: |
           Vyvinul jsem aplikaci pro správu a distribuci firmware a balíčků CPE zařízení. Na projektu jsem provedl analýzu řešení, včetně zmapování existujícího komunikačního protokolu a následného vývoje. Aplikace je nasazena v on-prem na <mark>Payara AS</mark> a skládá se z backendu a frontendu.
-          Backend vystavuje HTTP endpointy pro CPE a zároveň REST rozhranní pro frontend za využití <mark>Spring Boot</mark>, <mark>Apache Camel</mark>, <mark>EclipseLink</mark>, <mark>MySQL NDB Cluster</mark>. Frontend vystavující uživatelské a administrátorské rozhranní jsem naprogramoval v <mark>AngularJS</mark>.
-          Aplikaci jsem následně podle požadavků upravil i pro nové typy CPE s odlišným komunikačním rozhranním.
+          Backend vystavuje HTTP endpointy pro CPE a zároveň REST rozhranní pro frontend za využití <mark>Spring Boot</mark>, <mark>Apache Camel</mark>, <mark>EclipseLink</mark>, <mark>Hazelcast</mark>, <mark>MySQL NDB Cluster</mark>. Frontend vystavující uživatelské a administrátorské rozhranní jsem naprogramoval v <mark>AngularJS</mark>.
+          Aplikaci jsem následně podle požadavků rozšířil i pro nové typy CPE s odlišným komunikačním rozhranním.
       - layout: top-middle
         title: MAS
         sub_title: CGI
