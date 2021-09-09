@@ -6,9 +6,9 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Jan Bednář
+name: Ing. Jan Bednář
 title: Senior developer
-email: kontakt@janbednar.cz
+email: ahoj@janbednar.cz
 website: www.janbednar.cz
 
 # Dark Mode (true/false/never)
@@ -17,7 +17,7 @@ darkmode: false
 # Social links
 #twitter_username: facespics
 github_username:  bedlaj
-stackoverflow_username: bedla
+stackoverflow_username: "8576169"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -47,73 +47,153 @@ linkedin_username: jan-bednář-7bb07983
 # About Section
 about_title: O mně
 about_profile_image: images/profile.jpeg
-about_content: | # this will include new lines to allow paragraphs
-  Ahoj, jmenuji se Honza a jsem SW developer.
-  Mezi moje specializace patří <mark>Java</mark>, <mark>Apache Camel</mark>, <mark>Python</mark> a integrace včetně designu řešení.
+about_content: |
+  Ahoj! Jmenuji se Honza (přezdívka Bedla) a jsem SW developer.
 
+  Mezi moje specializace patří <mark>JavaEE</mark>, <mark>Apache Camel</mark>, <mark>Spring Boot</mark>, <mark>Quarkus</mark> a integrace včetně designu řešení.
+
+  Umím být součástí celého vývojového cyklu, od quickscanu, nabídky, analýzy, detail designu, přes vývoj, testing, profiling a ladění, CI/CD až po release a i následný L3 support.
+
+  Dokáži pracovat v týmu i sám, agilem i waterfallem.
+
+  Hledám pouze kreativní projekty, které mi budou dávat smysl. Nehledám teplé místečko na údržbě legacy aplikací.
+  Hledám projekty na IČO. Nehledám práci na HPP.
+
+  Jsem Apache member a ❤ Open Source.
 content:
-  - title: Projekty # Title for the section
+  - title: Projekty # Title for the section <mark></mark>
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: Apache Camel
+        link: https://github.com/apache/camel
         # link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          - title:  Apache Camel
+            icon: fas fa-globe
+            url: camel.apache.org/community/team/
+        description: |
+          Od roku 2019 jsem členem Apache týmu a podílím se na rozvoji Open Source frameworku Apache Camel, který implementuje EIP (Enterprise Integration Patterns)
+      - layout: top-middle
+        title: Stream cloud processing IPTV
+        sub_title: CGI
+        description: |
+          Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v <mark>Microsoft Azure</mark>. Na projektu jsem byl v rolích Team Leadera, programátora a architekta.
+          Aplikace využívá <mark>Apache Kafka</mark>, <mark>Azure Data Explorer</mark>, <mark>Azure Kubernetes</mark>, <mark>Quarkus</mark>, <mark>PostgreSQL</mark>, <mark>Eclipse Vert.X</mark>, <mark>Grafana</mark>, <mark>Azure AD</mark>.
+          Provozní monitoring zajišťuje <mark>Eclipse Microprofile Metrics</mark>, který vystavuje <mark>Prometheus</mark> metriky pro <mark>Azure Monitor</mark>. CI/CD proces je zajištěný přes <mark>Azure DevOPS</mark>.
+      - layout: top-middle
+        title: Stream processing pro BI a Service Assurance
+        sub_title: CGI
+        description: |
+          Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v on-prem prostředí. Na projektu jsem byl v rolích Team Leadera a programátora.
+          Ekosystém využívá <mark>Apache Kafka</mark>, <mark>Python3</mark>, <mark>Numpy</mark>, <mark>Pandas</mark>, <mark>Kafka Connect</mark> a <mark>Debezium CDC</mark> pro akvizici, normalizaci, transformaci a agregaci dat. Výstupem jsou data v <mark>ElasticSearch</mark>, <mark>MySQL</mark> a <mark>InfluxDB</mark>.
+          Aplikace je nasazená v on-prem pomocí <mark>Docker Compose</mark>. Build je přes <mark>Gitlab CI Pipelines</mark>.
+          Prezentační logiku pro Service Assurance zajišťují dashboardy v <mark>Grafana</mark>.
+          Prezentační logiku pro BI zajišťuje existující Data Warehouse, kterému aplikace poskytuje na SFTP pravidelné extrakty.
+      - layout: top-middle
+        title: PDS
+        sub_title: CGI
+        description: |
+          Vyvinul jsem aplikaci pro správu a distribuci firmware a balíčků CPE zařízení. Na projektu jsem provedl analýzu řešení, včetně zmapování existujícího komunikačního protokolu a následného vývoje. Aplikace je nasazena v on-prem na <mark>Payara AS</mark> a skládá se z backendu a frontendu.
+          Backend vystavuje HTTP endpointy pro CPE a zároveň REST rozhranní pro frontend za využití <mark>Spring Boot</mark>, <mark>Apache Camel</mark>, <mark>EclipseLink</mark>, <mark>MySQL NDB Cluster</mark>. Frontend vystavující uživatelské a administrátorské rozhranní jsem naprogramoval v <mark>AngularJS</mark>.
+          Aplikaci jsem následně podle požadavků upravil i pro nové typy CPE s odlišným komunikačním rozhranním.
+      - layout: top-middle
+        title: MAS
+        sub_title: CGI
+        description: |
+          Vyvinul jsem aplikaci pro řízení video enkodéru. Aplikace slouží k přípravě a transkódování video obsahu před nasazením do VOD katalogu. Aplikace má <mark>AngularJS</mark> frontend, obsahující <mark>Shaka Player</mark> a komunikuje se <mark>Spring Boot</mark> backendem pro správu metadat o video souboru. Metadata o jednotlivých stopách a náhledy generuje <mark>Apache Camel</mark> za využití <mark>FFMpeg</mark>.
+      - layout: top-middle
+        title: PerfTool
+        sub_title: CGI
+        description: |
+          Vyvinul jsem pro IPTV platformu aplikaci pro reálné generování zátěže. Toto usnadnilo projekt stabilizace platformy, protože to umožnilo nasimulovat chování platformy z předchozích výpadků na izolovaném prostředí, nebo mimo televizní špičku. Aplikace pomocí grok patternů parsuje access logy a zákaznické extrakty do <mark>MongoDB</mark>. Následně spouští nad daty transformační vrstvy, které upravují jednotlivé parametry HTTP volání tak, aby byl dodržený požadovaný histogram a délka zátěže, validita volánís ohledem na zadané testovací účty. Technické řešení je pomocí <mark>Apache Camel</mark>, <mark>Spring Boot</mark> a <mark>OKHttp</mark>.
+      - layout: top-middle
+        title: Validátor VOD obsahu
+        sub_title: CGI
+        description: |
+          Vyvinul jsem nástroj pro automatickou validaci úplnosti nasazení VOD obsahu u IPTV operátora. Aplikace využívá <mark>Spring Boot</mark> a <mark>MySQL</mark>. Generuje report v případě, že nasazení nebylo kompletní, případně chybí některé díly seriálu. Toto ušetřilo nejméně dva dny týdně manuální kontroly, zrychlilo reakční čas a zamezilo pokutám od dodavatele obsahu.
+      - layout: top-middle
+        title: ActiveMQ Artemis
+        sub_title: CGI
+        description: |
+          Pro Telco operátora jsem ladil JMS Stomp broker ActiveMQ Artemis, který slouží pro vzdálené ovládání CPE. JMS Cluster jsem optimalizoval jak na úrovni konfigurace a JVM, tak na úrovni OS a TCP IP stacku. Pro stejného operátora jsem vyvinul OAuth plugin do ActiveMQ Artemis
+      - layout: top-middle
+        title: CRM
+        sub_title: CGI
+        description: |
+          Byl jsem součástí týmu, který pro telco operátora vyvíjel backendovou část pro Liferay CRM. Technologie <mark>Spring</mark>, <mark>Wildfly</mark>, <mark>Oracle</mark>
+      - layout: top-middle
+        title: Billing
+        sub_title: CGI
+        description: |
+          Byl jsem součástí týmu, který pracoval na velkém transformačním projektu billingu. Navrhli jsme a vyvinuli distribuovanou integrační vrstvu mezi provisioningem a billingem, umožňující vykonávání dekompozičních pravidel nad produkty podle logických celků a pluginů na základě BPMN diagramů v Enterprise Architect. Technologie <mark>Wildfly</mark>, <mark>Apache Camel</mark>, <mark>Hibernate</mark>, <mark>Infinispan</mark>, <mark>Oracle</mark>, <mark>JavaFX</mark>, <mark>SOAP</mark>, <mark>JMS</mark>. Aplikace je nasazená ve Wildfly clusteru v doménovém módu. K této aplikaci jsme vyvinuli i několik obslužných aplikací pro správu konfigurací a trasování požadavků.
+      - layout: top-middle
+        title: Operativní reporting
+        sub_title: CGI
+        description: |
+          Vyvinuli jsme aplikaci pro uživatelsky přívětivé generování ad-hoc reportů, pomocí drag&drop skládání jednotlivých entit a vazeb. Aplikace je vyvinuta pomocí <mark>PHP</mark> a <mark>JQuery</mark>. Aplikační logika validuje a skládá uživatelské modely reportů a následně je dransformuje v SQL dotazy do existujícího datového skladu.
+      - layout: top-middle
+        title: ETKasa
+        link: etkasa.cz
+        sub_title: Freelancer
+        description: |
+          Vyvinul jsem <mark>Android</mark> aplikaci pro evidenci EET tržeb. Aplikace používá <mark>SQLite</mark> a <mark>GreenDAO</mark> pro ukládání tržeb, <mark>SOAP</mark> pro komunikaci s API finanční správy, <mark>ACRA</mark> pro error reporting. Komunikace s tiskárnou probíhá přímou komunikací <mark>POS</mark> příkazů přes bluetooth socket.  K aplikaci jsem vyvinul i <mark>Spring Boot</mark> REST API backend pro správu licencí, aktualizací a monitoring.
 
   - title: Pracovní zkušenosti # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: CGI IT Czech Republic
+        link: https://www.cgi.com/ceska-republika/cs
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+        sub_title: Analyst/programmer → System Architect → System Designer
+        caption: Březen 2015 - Prosinec 2021
+        description: |
+          V CGI jsem pracoval převážně na projektech v telco sektoru, ale také ve finančním sektoru. Podílel jsem se na návrhu řešení, nabídkách, implementaci, technologickém rozvoji a L3 supportu. V CGI jsem byl v průběhu času podle potřeby v roli analytika, programátora, architekta a team leadera. V posledních letech jsem participoval i přípravám nabídek, cenových odhadů a v menší míře i business developmentu.
+      - layout: left
+        title: Materna Communications
+        link: https://www.comverga.com/cze/
+        # link_text: boringcompany.com
+        sub_title: Programátor
+        caption: Červen 2014 - Březen 2015
+        description: |
+          Pracoval jsem na vývoji Android aplikace pro ČMI s JavaEE Backendem. Spolupracoval jsem na vývoji samoobsluhy pro virtuálního operátora. Zautomatizoval jsem uživatelské testy samoobsluhy, včetně automatizace SMS OTP kódů, pomoci GSM brány. Vyvíjel jsem SPA aplikace pro SMS soutěže, včetně integrace na SMS bránu. Vyvíjel jsem Perl monitorovací scripty pro Nagios a Icinga.
 
   - title: Vzdělání # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: top-middle
+        title: Univerzita Hradec Králové
+        caption: TODO
+        sub_title: Aplikovaná Informatika - Bc.
+      - layout: top-middle
+        title: Univerzita Hradec Králové
+        caption: TODO
+        sub_title: Aplikovaná Informatika - Ing.
+
+  - title: Něco navíc
+    layout: list
+    content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-
-  - title: Koníčky
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+        caption: Aplikační bezpečnost
+        description: |
+          Orientuji se ve webových útocích a aplikační bezpečnosti. Ve volném čase jsem bug hunter a etický hacker.
+      - layout: left
+        caption: TCP přenosy a stabilita sítě
+        description: |
+          Vím, co je TCP retransmission, SYN Flood, socket TIME_WAIT,... Nebojím se použít Wireshark a Tcpdump.
+      - layout: left
+        caption: Open Source
+        description: |
+          Fandím Open Source. Když najdu chybu ve veřejném projektu, tak namísto stěžování vytvořím Pull Request.
+      - layout: left
+        caption: Unit testy
+        description: |
+          Každý dělá chyby, proto je můj kód krytý unit testy.
 
 # Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+footer_show_references: false
+#references_title: Zákazník má vždycky pravdu, kromě těch případů, kdy nemá.
 
 # Build settings
 remote_theme: sproogen/resume-theme
