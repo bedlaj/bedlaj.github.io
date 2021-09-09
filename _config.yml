@@ -12,7 +12,7 @@ email: ahoj@janbednar.cz
 website: www.janbednar.cz
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 #twitter_username: facespics
@@ -106,7 +106,7 @@ content:
         title: PerfTool
         sub_title: CGI
         description: |
-          Vyvinul jsem pro IPTV platformu aplikaci pro reálné generování zátěže. Toto usnadnilo projekt stabilizace platformy, protože to umožnilo nasimulovat chování platformy z předchozích výpadků na izolovaném prostředí, nebo mimo televizní špičku. Aplikace pomocí grok patternů parsuje access logy a zákaznické extrakty do <mark>MongoDB</mark>. Následně spouští nad daty transformační vrstvy, které upravují jednotlivé parametry HTTP volání tak, aby byl dodržený požadovaný histogram a délka zátěže, validita volánís ohledem na zadané testovací účty. Technické řešení je pomocí <mark>Apache Camel</mark>, <mark>Spring Boot</mark> a <mark>OKHttp</mark>.
+          Vyvinul jsem pro IPTV platformu aplikaci pro reálné generování zátěže. Toto usnadnilo projekt stabilizace platformy, protože to umožnilo nasimulovat chování platformy z předchozích výpadků na izolovaném prostředí, nebo mimo televizní špičku. Aplikace pomocí grok patternů parsuje access logy a zákaznické extrakty do <mark>MongoDB</mark>. Následně spouští nad daty transformační vrstvy, které upravují jednotlivé parametry HTTP volání tak, aby byl dodržený požadovaný histogram a délka zátěže, validita volání s ohledem na zadané testovací účty. Technické řešení je pomocí <mark>Apache Camel</mark>, <mark>Spring Boot</mark> a <mark>OKHttp</mark>.
       - layout: top-middle
         title: Validátor VOD obsahu
         sub_title: CGI
@@ -126,7 +126,7 @@ content:
         title: Billing
         sub_title: CGI
         description: |
-          Byl jsem součástí týmu, který pracoval na velkém transformačním projektu billingu. Navrhli jsme a vyvinuli distribuovanou integrační vrstvu mezi provisioningem a billingem, umožňující vykonávání dekompozičních pravidel nad produkty podle logických celků a pluginů na základě BPMN diagramů v Enterprise Architect. Technologie <mark>Wildfly</mark>, <mark>Apache Camel</mark>, <mark>Hibernate</mark>, <mark>Infinispan</mark>, <mark>Oracle</mark>, <mark>JavaFX</mark>, <mark>SOAP</mark>, <mark>JMS</mark>. Aplikace je nasazená ve Wildfly clusteru v doménovém módu. K této aplikaci jsme vyvinuli i několik obslužných aplikací pro správu konfigurací a trasování požadavků.
+          Byl jsem několik let součástí týmu, který pracoval na velkém transformačním projektu billingu. Navrhli jsme a vyvinuli distribuovanou integrační vrstvu mezi provisioningem a billingem, umožňující vykonávání dekompozičních pravidel nad produkty podle logických celků a pluginů na základě BPMN diagramů v Enterprise Architect. Technologie <mark>Wildfly</mark>, <mark>Apache Camel</mark>, <mark>Hibernate</mark>, <mark>Infinispan</mark>, <mark>Oracle</mark>, <mark>JavaFX</mark>, <mark>SOAP</mark>, <mark>JMS</mark>. Aplikace je nasazená ve Wildfly clusteru v doménovém módu. K této aplikaci jsme vyvinuli i několik obslužných aplikací pro správu konfigurací a trasování požadavků.
       - layout: top-middle
         title: Operativní reporting
         sub_title: CGI
