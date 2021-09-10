@@ -65,16 +65,6 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Apache Camel
-        link: https://github.com/apache/camel
-        # link_text: Project Website
-        additional_links:
-          - title:  Apache Camel
-            icon: fas fa-globe
-            url: camel.apache.org/community/team/
-        description: |
-          Od roku 2019 jsem členem Apache týmu a podílím se na rozvoji Open Source frameworku Apache Camel, který implementuje EIP (Enterprise Integration Patterns)
-      - layout: top-middle
         title: Stream cloud processing IPTV
         sub_title: CGI
         description: |
@@ -138,6 +128,16 @@ content:
         sub_title: Freelancer
         description: |
           Vyvinul jsem <mark>Android</mark> aplikaci pro evidenci EET tržeb. Aplikace používá <mark>SQLite</mark> a <mark>GreenDAO</mark> pro ukládání tržeb, <mark>SOAP</mark> pro komunikaci s API finanční správy, <mark>ACRA</mark> pro error reporting. Komunikace s tiskárnou probíhá přímou komunikací <mark>POS</mark> příkazů přes bluetooth socket.  K aplikaci jsem vyvinul i <mark>Spring Boot</mark> REST API backend pro správu licencí, aktualizací a monitoring.
+      - layout: top-middle
+        title: Apache Camel
+        link: https://github.com/apache/camel
+        # link_text: Project Website
+        additional_links:
+          - title:  Apache Camel
+            icon: fas fa-globe
+            url: camel.apache.org/community/team/
+        description: |
+          Od roku 2019 jsem členem Apache týmu a podílím se na rozvoji Open Source frameworku Apache Camel, který implementuje EIP (Enterprise Integration Patterns)
 
   - title: Pracovní zkušenosti # Title for the section
     layout: list # Type of content section (list/text)
