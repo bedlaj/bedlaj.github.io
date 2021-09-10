@@ -61,71 +61,12 @@ about_content: |
 
   Jsem Apache member a ❤ Open Source.
 content:
-  - title: Projekty # Title for the section <mark></mark>
+  - title: Projekty
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Stream cloud processing IPTV
-        sub_title: CGI
-        description: |
-          Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v <mark>Microsoft Azure</mark>. Na projektu jsem byl v rolích Team Leadera, programátora a architekta.
-          Aplikace využívá <mark>Apache Kafka</mark>, <mark>Azure Data Explorer</mark>, <mark>Azure Kubernetes</mark>, <mark>Quarkus</mark>, <mark>PostgreSQL</mark>, <mark>Eclipse Vert.X</mark>, <mark>Grafana</mark>, <mark>Azure AD</mark>.
-          Provozní monitoring zajišťuje <mark>Eclipse Microprofile Metrics</mark>, který vystavuje <mark>Prometheus</mark> metriky pro <mark>Azure Monitor</mark>. CI/CD proces je zajištěný přes <mark>Azure DevOPS</mark>.
-      - layout: top-middle
-        title: Stream processing pro BI a Service Assurance
-        sub_title: CGI
-        description: |
-          Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v on-prem prostředí. Na projektu jsem byl v rolích Team Leadera a programátora.
-          Ekosystém využívá <mark>Apache Kafka</mark>, <mark>Python3</mark>, <mark>Numpy</mark>, <mark>Pandas</mark>, <mark>Kafka Connect</mark> a <mark>Debezium CDC</mark> pro akvizici, normalizaci, transformaci a agregaci dat. Výstupem jsou data v <mark>ElasticSearch</mark>, <mark>MySQL</mark> a <mark>InfluxDB</mark>.
-          Aplikace je nasazená v on-prem pomocí <mark>Docker Compose</mark>. Build je přes <mark>Gitlab CI Pipelines</mark>.
-          Prezentační logiku pro Service Assurance zajišťují dashboardy v <mark>Grafana</mark>.
-          Prezentační logiku pro BI zajišťuje existující Data Warehouse, kterému aplikace poskytuje na SFTP pravidelné extrakty.
-      - layout: top-middle
-        title: PDS
-        sub_title: CGI
-        description: |
-          Vyvinul jsem aplikaci pro správu a distribuci firmware a balíčků CPE zařízení. Na projektu jsem provedl analýzu řešení, včetně zmapování existujícího komunikačního protokolu a následného vývoje. Aplikace je nasazena v on-prem na <mark>Payara AS</mark> a skládá se z backendu a frontendu.
-          Backend vystavuje HTTP endpointy pro CPE a zároveň REST rozhranní pro frontend za využití <mark>Spring Boot</mark>, <mark>Apache Camel</mark>, <mark>EclipseLink</mark>, <mark>Hazelcast</mark>, <mark>MySQL NDB Cluster</mark>. Frontend vystavující uživatelské a administrátorské rozhranní jsem naprogramoval v <mark>AngularJS</mark>.
-          Aplikaci jsem následně podle požadavků rozšířil i pro nové typy CPE s odlišným komunikačním rozhranním.
-      - layout: top-middle
-        title: MAS
-        sub_title: CGI
-        description: |
-          Vyvinul jsem aplikaci pro řízení video enkodéru. Aplikace slouží k přípravě a transkódování video obsahu před nasazením do VOD katalogu. Aplikace má <mark>AngularJS</mark> frontend, obsahující <mark>Shaka Player</mark> a komunikuje se <mark>Spring Boot</mark> backendem pro správu metadat o video souboru. Metadata o jednotlivých stopách a náhledy generuje <mark>Apache Camel</mark> za využití <mark>FFMpeg</mark>.
-      - layout: top-middle
-        title: PerfTool
-        sub_title: CGI
-        description: |
-          Vyvinul jsem pro IPTV platformu aplikaci pro reálné generování zátěže. Toto usnadnilo projekt stabilizace platformy, protože to umožnilo nasimulovat chování platformy z předchozích výpadků na izolovaném prostředí, nebo mimo televizní špičku. Aplikace pomocí grok patternů parsuje access logy a zákaznické extrakty do <mark>MongoDB</mark>. Následně spouští nad daty transformační vrstvy, které upravují jednotlivé parametry HTTP volání tak, aby byl dodržený požadovaný histogram a délka zátěže, validita volání s ohledem na zadané testovací účty. Technické řešení je pomocí <mark>Apache Camel</mark>, <mark>Spring Boot</mark> a <mark>OKHttp</mark>.
-      - layout: top-middle
-        title: Validátor VOD obsahu
-        sub_title: CGI
-        description: |
-          Vyvinul jsem nástroj pro automatickou validaci úplnosti nasazení VOD obsahu u IPTV operátora. Aplikace využívá <mark>Spring Boot</mark> a <mark>MySQL</mark>. Generuje report v případě, že nasazení nebylo kompletní, případně chybí některé díly seriálu. Toto ušetřilo nejméně dva dny týdně manuální kontroly, zrychlilo reakční čas a zamezilo pokutám od dodavatele obsahu.
-      - layout: top-middle
-        title: ActiveMQ Artemis
-        sub_title: CGI
-        description: |
-          Pro Telco operátora jsem ladil JMS Stomp broker ActiveMQ Artemis, který slouží pro vzdálené ovládání CPE. JMS Cluster jsem optimalizoval jak na úrovni konfigurace a JVM, tak na úrovni OS a TCP IP stacku. Pro stejného operátora jsem vyvinul OAuth plugin do ActiveMQ Artemis
-      - layout: top-middle
-        title: CRM
-        sub_title: CGI
-        description: |
-          Byl jsem součástí týmu, který pro telco operátora vyvíjel backendovou část pro Liferay CRM. Technologie <mark>Spring</mark>, <mark>Wildfly</mark>, <mark>Oracle</mark>
-      - layout: top-middle
-        title: Billing
-        sub_title: CGI
-        description: |
-          Byl jsem několik let součástí týmu, který pracoval na velkém transformačním projektu billingu. Navrhli jsme a vyvinuli distribuovanou integrační vrstvu mezi provisioningem a billingem, umožňující vykonávání dekompozičních pravidel nad produkty podle logických celků a pluginů na základě BPMN diagramů v Enterprise Architect. Technologie <mark>Wildfly</mark>, <mark>Apache Camel</mark>, <mark>Hibernate</mark>, <mark>Infinispan</mark>, <mark>Oracle</mark>, <mark>JavaFX</mark>, <mark>SOAP</mark>, <mark>JMS</mark>. Aplikace je nasazená ve Wildfly clusteru v doménovém módu. K této aplikaci jsme vyvinuli i několik obslužných aplikací pro správu konfigurací a trasování požadavků.
-      - layout: top-middle
-        title: Operativní reporting
-        sub_title: CGI
-        description: |
-          Vyvinuli jsme aplikaci pro uživatelsky přívětivé generování ad-hoc reportů, pomocí drag&drop skládání jednotlivých entit a vazeb. Aplikace je vyvinuta pomocí <mark>PHP</mark> a <mark>JQuery</mark>. Aplikační logika validuje a skládá uživatelské modely reportů a následně je dransformuje v SQL dotazy do existujícího datového skladu.
-      - layout: top-middle
         title: ETKasa
         link: "http://etkasa.cz"
-        sub_title: Freelancer
         description: |
           Vyvinul jsem <mark>Android</mark> aplikaci pro evidenci EET tržeb. Aplikace používá <mark>SQLite</mark> a <mark>GreenDAO</mark> pro ukládání tržeb, <mark>SOAP</mark> pro komunikaci s API finanční správy, <mark>ACRA</mark> pro error reporting. Komunikace s tiskárnou probíhá přímou komunikací <mark>POS</mark> příkazů přes bluetooth socket.  K aplikaci jsem vyvinul i <mark>Spring Boot</mark> REST API backend pro správu licencí, aktualizací a monitoring.
       - layout: top-middle
@@ -139,6 +80,57 @@ content:
         description: |
           Od roku 2019 jsem členem Apache týmu a podílím se na rozvoji Open Source frameworku Apache Camel, který implementuje EIP (Enterprise Integration Patterns)
 
+  - title: Projekty v rámci CGI # Title for the section <mark></mark>
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Stream cloud processing IPTV
+        description: |
+          Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v <mark>Microsoft Azure</mark>. Na projektu jsem byl v rolích Team Leadera, programátora a architekta.
+          Aplikace využívá <mark>Apache Kafka</mark>, <mark>Azure Data Explorer</mark>, <mark>Azure Kubernetes</mark>, <mark>Quarkus</mark>, <mark>PostgreSQL</mark>, <mark>Eclipse Vert.X</mark>, <mark>Grafana</mark>, <mark>Azure AD</mark>.
+          Provozní monitoring zajišťuje <mark>Eclipse Microprofile Metrics</mark>, který vystavuje <mark>Prometheus</mark> metriky pro <mark>Azure Monitor</mark>. CI/CD proces je zajištěný přes <mark>Azure DevOPS</mark>.
+      - layout: top-middle
+        title: Stream processing pro BI a Service Assurance
+        description: |
+          Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v on-prem prostředí. Na projektu jsem byl v rolích Team Leadera a programátora.
+          Ekosystém využívá <mark>Apache Kafka</mark>, <mark>Python3</mark>, <mark>Numpy</mark>, <mark>Pandas</mark>, <mark>Kafka Connect</mark> a <mark>Debezium CDC</mark> pro akvizici, normalizaci, transformaci a agregaci dat. Výstupem jsou data v <mark>ElasticSearch</mark>, <mark>MySQL</mark> a <mark>InfluxDB</mark>.
+          Aplikace je nasazená v on-prem pomocí <mark>Docker Compose</mark>. Build je přes <mark>Gitlab CI Pipelines</mark>.
+          Prezentační logiku pro Service Assurance zajišťují dashboardy v <mark>Grafana</mark>.
+          Prezentační logiku pro BI zajišťuje existující Data Warehouse, kterému aplikace poskytuje na SFTP pravidelné extrakty.
+      - layout: top-middle
+        title: PDS
+        description: |
+          Vyvinul jsem aplikaci pro správu a distribuci firmware a balíčků CPE zařízení. Na projektu jsem provedl analýzu řešení, včetně zmapování existujícího komunikačního protokolu a následného vývoje. Aplikace je nasazena v on-prem na <mark>Payara AS</mark> a skládá se z backendu a frontendu.
+          Backend vystavuje HTTP endpointy pro CPE a zároveň REST rozhranní pro frontend za využití <mark>Spring Boot</mark>, <mark>Apache Camel</mark>, <mark>EclipseLink</mark>, <mark>Hazelcast</mark>, <mark>MySQL NDB Cluster</mark>. Frontend vystavující uživatelské a administrátorské rozhranní jsem naprogramoval v <mark>AngularJS</mark>.
+          Aplikaci jsem následně podle požadavků rozšířil i pro nové typy CPE s odlišným komunikačním rozhranním.
+      - layout: top-middle
+        title: MAS
+        description: |
+          Vyvinul jsem aplikaci pro řízení video enkodéru. Aplikace slouží k přípravě a transkódování video obsahu před nasazením do VOD katalogu. Aplikace má <mark>AngularJS</mark> frontend, obsahující <mark>Shaka Player</mark> a komunikuje se <mark>Spring Boot</mark> backendem pro správu metadat o video souboru. Metadata o jednotlivých stopách a náhledy generuje <mark>Apache Camel</mark> za využití <mark>FFMpeg</mark>.
+      - layout: top-middle
+        title: PerfTool
+        description: |
+          Vyvinul jsem pro IPTV platformu aplikaci pro reálné generování zátěže. Toto usnadnilo projekt stabilizace platformy, protože to umožnilo nasimulovat chování platformy z předchozích výpadků na izolovaném prostředí, nebo mimo televizní špičku. Aplikace pomocí grok patternů parsuje access logy a zákaznické extrakty do <mark>MongoDB</mark>. Následně spouští nad daty transformační vrstvy, které upravují jednotlivé parametry HTTP volání tak, aby byl dodržený požadovaný histogram a délka zátěže, validita volání s ohledem na zadané testovací účty. Technické řešení je pomocí <mark>Apache Camel</mark>, <mark>Spring Boot</mark> a <mark>OKHttp</mark>.
+      - layout: top-middle
+        title: Validátor VOD obsahu
+        description: |
+          Vyvinul jsem nástroj pro automatickou validaci úplnosti nasazení VOD obsahu u IPTV operátora. Aplikace využívá <mark>Spring Boot</mark> a <mark>MySQL</mark>. Generuje report v případě, že nasazení nebylo kompletní, případně chybí některé díly seriálu. Toto ušetřilo nejméně dva dny týdně manuální kontroly, zrychlilo reakční čas a zamezilo pokutám od dodavatele obsahu.
+      - layout: top-middle
+        title: ActiveMQ Artemis
+        description: |
+          Pro Telco operátora jsem ladil JMS Stomp broker ActiveMQ Artemis, který slouží pro vzdálené ovládání CPE. JMS Cluster jsem optimalizoval jak na úrovni konfigurace a JVM, tak na úrovni OS a TCP IP stacku. Pro stejného operátora jsem vyvinul OAuth plugin do ActiveMQ Artemis
+      - layout: top-middle
+        title: CRM
+        description: |
+          Byl jsem součástí týmu, který pro telco operátora vyvíjel backendovou část pro Liferay CRM. Technologie <mark>Spring</mark>, <mark>Wildfly</mark>, <mark>Oracle</mark>
+      - layout: top-middle
+        title: Billing
+        description: |
+          Byl jsem několik let součástí týmu, který pracoval na velkém transformačním projektu billingu. Navrhli jsme a vyvinuli distribuovanou integrační vrstvu mezi provisioningem a billingem, umožňující vykonávání dekompozičních pravidel nad produkty podle logických celků a pluginů na základě BPMN diagramů v Enterprise Architect. Technologie <mark>Wildfly</mark>, <mark>Apache Camel</mark>, <mark>Hibernate</mark>, <mark>Infinispan</mark>, <mark>Oracle</mark>, <mark>JavaFX</mark>, <mark>SOAP</mark>, <mark>JMS</mark>. Aplikace je nasazená ve Wildfly clusteru v doménovém módu. K této aplikaci jsme vyvinuli i několik obslužných aplikací pro správu konfigurací a trasování požadavků.
+      - layout: top-middle
+        title: Operativní reporting
+        description: |
+          Vyvinuli jsme aplikaci pro uživatelsky přívětivé generování ad-hoc reportů, pomocí drag&drop skládání jednotlivých entit a vazeb. Aplikace je vyvinuta pomocí <mark>PHP</mark> a <mark>JQuery</mark>. Aplikační logika validuje a skládá uživatelské modely reportů a následně je dransformuje v SQL dotazy do existujícího datového skladu.
   - title: Pracovní zkušenosti # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -146,10 +138,10 @@ content:
         title: CGI IT Czech Republic
         link: https://www.cgi.com/ceska-republika/cs
         # link_text: boringcompany.com
-        sub_title: Analyst/programmer → System Architect → System Designer
+        sub_title: Analyst/programmer → System Designer → System Architect
         caption: Březen 2015 - Prosinec 2021
         description: |
-          V CGI jsem pracoval převážně na projektech v telco sektoru, ale také ve finančním sektoru. Podílel jsem se na návrhu řešení, nabídkách, implementaci, technologickém rozvoji a L3 supportu. V CGI jsem byl v průběhu času podle potřeby v roli analytika, programátora, architekta a team leadera. V posledních letech jsem participoval i přípravám nabídek, cenových odhadů a v menší míře i business developmentu.
+          V CGI jsem pracoval převážně na projektech v telco sektoru, ale také ve finančním sektoru. Podílel jsem se na návrhu řešení, nabídkách, implementaci, technologickém rozvoji a L3 supportu. V CGI jsem byl v průběhu času podle potřeby v roli analytika, programátora, architekta a team leadera. V posledních letech jsem participoval i přípravám nabídek, cenových odhadů a v menší míře i business developmentu. Podílel jsem se na inovacích a adopci nových technologí.
       - layout: left
         title: Materna Communications
         link: https://www.comverga.com/cze/
