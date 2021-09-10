@@ -155,7 +155,7 @@ content:
         link: https://www.comverga.com/cze/
         # link_text: boringcompany.com
         sub_title: Programátor
-        caption: Červen 2014 - Březen 2015
+        caption: Červenec 2014 - Leden 2015
         description: |
           Pracoval jsem na vývoji Android aplikace pro ČMI s JavaEE Backendem. Spolupracoval jsem na vývoji samoobsluhy pro virtuálního operátora. Zautomatizoval jsem uživatelské testy samoobsluhy, včetně automatizace SMS OTP kódů, pomoci GSM brány. Vyvíjel jsem SPA aplikace pro SMS soutěže, včetně integrace na SMS bránu. Vyvíjel jsem Perl monitorovací scripty pro Nagios a Icinga.
 
@@ -164,12 +164,12 @@ content:
     content:
       - layout: top-middle
         title: Univerzita Hradec Králové
-        caption: TODO
-        sub_title: Aplikovaná Informatika - Bc.
+        caption: 2013 - 2016
+        sub_title: Aplikovaná Informatika - Ing.
       - layout: top-middle
         title: Univerzita Hradec Králové
-        caption: TODO
-        sub_title: Aplikovaná Informatika - Ing.
+        caption: 2010 - 2013
+        sub_title: Aplikovaná Informatika - Bc.
 
   - title: Něco navíc
     layout: list
