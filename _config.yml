@@ -61,25 +61,6 @@ about_content: |
 
   Jsem Apache member a ❤ Open Source.
 content:
-  - title: Projekty
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: ETKasa
-        link: "http://etkasa.cz"
-        description: |
-          Vyvinul jsem <mark>Android</mark> aplikaci pro evidenci EET tržeb. Aplikace používá <mark>SQLite</mark> a <mark>GreenDAO</mark> pro ukládání tržeb, <mark>SOAP</mark> pro komunikaci s API finanční správy, <mark>ACRA</mark> pro error reporting. Komunikace s tiskárnou probíhá přímou komunikací <mark>POS</mark> příkazů přes bluetooth socket.  K aplikaci jsem vyvinul i <mark>Spring Boot</mark> REST API backend pro správu licencí, aktualizací a monitoring.
-      - layout: top-middle
-        title: Apache Camel
-        link: https://github.com/apache/camel
-        # link_text: Project Website
-        additional_links:
-          - title:  Apache Camel
-            icon: fas fa-globe
-            url: camel.apache.org/community/team/
-        description: |
-          Od roku 2019 jsem členem Apache týmu a podílím se na rozvoji Open Source frameworku Apache Camel, který implementuje EIP (Enterprise Integration Patterns)
-
   - title: Projekty v rámci CGI # Title for the section <mark></mark>
     layout: list # Type of content section (list/text)
     content:
@@ -131,6 +112,42 @@ content:
         title: Operativní reporting
         description: |
           Vyvinuli jsme aplikaci pro uživatelsky přívětivé generování ad-hoc reportů, pomocí drag&drop skládání jednotlivých entit a vazeb. Aplikace je vyvinuta pomocí <mark>PHP</mark> a <mark>JQuery</mark>. Aplikační logika validuje a skládá uživatelské modely reportů a následně je dransformuje v SQL dotazy do existujícího datového skladu.
+  - title: Vlastní projekty
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: ETKasa
+        link: "http://etkasa.cz"
+        description: |
+          Vyvinul jsem <mark>Android</mark> aplikaci pro evidenci EET tržeb. Aplikace používá <mark>SQLite</mark> a <mark>GreenDAO</mark> pro ukládání tržeb, <mark>SOAP</mark> pro komunikaci s API finanční správy, <mark>ACRA</mark> pro error reporting. Komunikace s tiskárnou probíhá přímou komunikací <mark>POS</mark> příkazů přes bluetooth socket.  K aplikaci jsem vyvinul i <mark>Spring Boot</mark> REST API backend pro správu licencí, aktualizací a monitoring.
+      - layout: top-middle
+        title: Apache Camel
+        link: https://github.com/apache/camel
+        # link_text: Project Website
+        additional_links:
+          - title:  Apache Camel
+            icon: fas fa-globe
+            url: camel.apache.org/community/team/
+        description: |
+          Od roku 2019 jsem členem Apache týmu a podílím se na rozvoji Open Source frameworku Apache Camel, který implementuje EIP (Enterprise Integration Patterns)
+      - layout: top-middle
+        title: OpenFonts
+        link: https://github.com/bedlaj/openfonts
+        # link_text: Project Website
+        description: |
+          Vyvinul jsem a udržuji repositář Google Fonts pro <mark>NPM</mark>, který pravidelně stahuje Google Fonty s otevřenou licencí jako NPM moduly. Využívá <mark>NodeJS</mark> a <mark>Lerna</mark>.
+      - layout: top-middle
+        title: SHA-512 TS
+        link: https://github.com/bedlaj/sha512-crypt-ts
+        # link_text: Project Website
+        description: |
+          Vyvinul jsem typescript NPM modul pro SHA-512, protože jsem potřeboval knihovnu typescript pro Unifi Reset Password kompatibilní s mkpasswd implementací.
+      - layout: top-middle
+        title: UniFi reset password
+        link: https://github.com/bedlaj/unifi-reset-password
+        # link_text: Project Website
+        description: |
+          Vyvinul jsem <mark>AngularJS</mark> aplikaci pro reset administrátorského hesla UniFi controlleru.
   - title: Pracovní zkušenosti # Title for the section
     layout: list # Type of content section (list/text)
     content:
