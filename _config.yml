@@ -124,7 +124,7 @@ content:
           Vyvinuli jsme aplikaci pro uživatelsky přívětivé generování ad-hoc reportů, pomocí drag&drop skládání jednotlivých entit a vazeb. Aplikace je vyvinuta pomocí <mark>PHP</mark> a <mark>JQuery</mark>. Aplikační logika validuje a skládá uživatelské modely reportů a následně je dransformuje v SQL dotazy do existujícího datového skladu.
       - layout: top-middle
         title: ETKasa
-        link: etkasa.cz
+        link: "http://etkasa.cz"
         sub_title: Freelancer
         description: |
           Vyvinul jsem <mark>Android</mark> aplikaci pro evidenci EET tržeb. Aplikace používá <mark>SQLite</mark> a <mark>GreenDAO</mark> pro ukládání tržeb, <mark>SOAP</mark> pro komunikaci s API finanční správy, <mark>ACRA</mark> pro error reporting. Komunikace s tiskárnou probíhá přímou komunikací <mark>POS</mark> příkazů přes bluetooth socket.  K aplikaci jsem vyvinul i <mark>Spring Boot</mark> REST API backend pro správu licencí, aktualizací a monitoring.
