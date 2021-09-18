@@ -1,1 +1,1 @@
-# bedlaj.github.io
+https://www.janbednar.cz/
