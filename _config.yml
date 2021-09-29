@@ -211,5 +211,9 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# jekyll-sitemap config
+url: "https://www.janbednar.cz"
+
 plugins:
  - jekyll-seo-tag
+ - jekyll-sitemap
