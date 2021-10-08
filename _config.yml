@@ -68,7 +68,7 @@ content:
         title: Stream cloud processing IPTV
         description: |
           Byl jsem součástí agilního týmu, který vyvíjel IPTV stream processing platformu postavenou na mikroservisní architektuře v <mark>Microsoft Azure</mark>. Na projektu jsem byl v rolích Team Leadera, programátora a architekta.
-          Aplikace využívá <mark>Apache Kafka</mark>, <mark>Azure Data Explorer</mark>, <mark>Azure Kubernetes</mark>, <mark>Quarkus</mark>, <mark>PostgreSQL</mark>, <mark>Eclipse Vert.X</mark>, <mark>Grafana</mark>, <mark>Azure AD</mark>.
+          Aplikace využívá <mark>Apache Kafka</mark>, <mark>Azure Data Explorer</mark>, <mark>Azure Kubernetes</mark>, <mark>Quarkus</mark>, <mark>PostgreSQL</mark>, <mark>Eclipse Vert.X</mark>, <mark>SmallRye Reactive Messaging</mark>, <mark>Grafana</mark>, <mark>Azure AD</mark>.
           Provozní monitoring zajišťuje <mark>Eclipse Microprofile Metrics</mark>, který vystavuje <mark>Prometheus</mark> metriky pro <mark>Azure Monitor</mark>. CI/CD proces je zajištěný přes <mark>Azure DevOPS</mark>.
       - layout: top-middle
         title: Stream processing pro BI a Service Assurance
